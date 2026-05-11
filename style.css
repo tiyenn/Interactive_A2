@@ -1,0 +1,126 @@
+:root {
+  --primary-bg-color: #dfe5ea;
+  --text-color: #000000;
+  --main-bg-color: #c2c0cb;
+  --main-text-color: #000000;
+  --main-btn-bg-color: #ffffff;
+
+/* For my study/music website, I decided to make the colours a saturated blue and purple as I find them aesthetic but also calming in a sense. They aren't too vibrant and is easy on the eyes. */
+/* I then changed my mind and decided to go for a simpler aesthetic using white/monotone colours because I think it will help with the calming sensation */
+
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 70;
+  padding: 70;
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* For the fonts, I went with the lucida sans font because I think it's calming and not too overwhleming, fitting for the calming aesthetic I am going for. */
+  
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add additional styles as needed */
+
+/* Create a container for the main content */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Header styling */
+header {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 90px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Media player styling */
+.media-player {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.media-player video {
+  max-width: 100%;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.custom-controls button {
+  background-color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
